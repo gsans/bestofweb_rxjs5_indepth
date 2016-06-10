@@ -18,7 +18,7 @@ a$: ---1---2---3|
 
 let observer = {
   next: v => l(v),
-  complete: () => console.log('|')
+  complete: () => l('|')
 };
 
 // let a$ = Rx.Observable.of(1, 2, 3);
