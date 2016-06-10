@@ -179,7 +179,7 @@ Rx.Observable.prototype.transform = transform;
 function transform(fn){
 	let input = this;
 	return Rx.Observable.create(observer => {
-		input.subscribe({
+		input.subscribe({ 
 			next: v => observer.next(fn(v)),
 			complete: () => observer.complete()
 		});
@@ -255,7 +255,7 @@ let subscription = b$.subscribe(observer);
 .
 .
 
-// 7) Schedulers 
+// 7) Schedulers  
 
 // ES6 Promises are asynchronous by default
 let p = new Promise(resolve => resolve(10));
