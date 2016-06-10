@@ -95,7 +95,7 @@ a$: ---1---2---3---...
 let observer = {
   next: v => l(v),
   complete: () => l('|')
-};
+}; 
 
 let a$ = Rx.Observable.create(observer => {
 	let i = 1;
