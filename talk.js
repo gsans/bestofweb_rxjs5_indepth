@@ -82,7 +82,7 @@ Best of Web 2016 - Best of Web 2016 - Best of Web 2016
 // 6) Create filter operator     - 
 // 7) Schedulers                 - 
 
-let l = console.log;
+let l = console.log.bind(console);
 
 // 1) Create a basic Observable
 
